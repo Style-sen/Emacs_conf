@@ -99,3 +99,29 @@
 再有，可以将宏命令，保存下来，设定到 emacs 的加载文件中，这样以后打开软件就可以使用这个宏了。
 (load-file "~/macros")
 打开 "~/macros" 文件，移动到末尾，执行“M-x insert-kbd-macro”输入刚才命名的名字，就将录制的宏命令保存下来了。
+# 6. 排序
+```
+默认情况下Emacs排序时是大小写敏感的,要让Emacs排序时忽略大小写,需要设置变量'sort-fold-case'为t
+```
+1. sort-lines
+* 按字典顺序对行进行排序
+2. sort-regexp-fields
+* 通过该命令,你可以只对一行的某个部分进行排序,而剩下的部分还保留原顺序.
+* 该命令首先提示你输入一个正则表达式用于标明哪些部分的内容参与排序,该正则表达式被称为record regexp,Emacs只对该正则表达式匹配的内容作顺序重排,而一行的其他内容不做变化
+* 然后提示你输入一个正则表达式用于说明根据哪些部分的内容进行排序,该正则表达式被称为key regexp,若该表达式为空,默认为\&,表示record regexp所匹配的所有内容,可用以用\数字来表示record regexp中的分组
+3. sort-columns
+* 根据选定列作为key来对行进行排序,所谓选定列是由mark和光标位置指定的列
+4. sort-fields
+* 所谓field是由空格或TAB分隔的单元.
+* 若直接用调用sort-fields,则表示根据第一个field来排序.
+* 可用使用使用C-u 数字参数来指定根据第几个field来排序(从1开始计算),若数字为负数,则从后往前数
+5. sort-numeric-fields
+* 类似sort-fields,但是排序时把指定的field当成数字来排序
+* Emacs会自动推测指定field的进制,若field以0x开始表示是16进制,以0开头的表示是而进行,默认为十进制(由变量`sort-numeric-base`决定)
+6. sort-pages
+* 根据字段顺序对页进行排序,所谓页是由 form feed character 即^L
+7. sort-paragraphs
+* 根据字典顺序对段落进行排序.
+* 段落的定义不同的mode下定义不同,但默认情况下是由一个或多个换行来划分的. 具体参见变量`paragraph-start`和`paragraph-separate`
+
+
