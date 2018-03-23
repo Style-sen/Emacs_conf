@@ -6,6 +6,7 @@
 [6.排序](#6)    
 [7.大小写转换](#7)    
 [8.执行shell命令](#8)    
+[9.常用M-x命令](#9)    
 
 <h2 id="1">1.光标移动</h2>    
 
@@ -161,3 +162,9 @@
 * `M-x shell`：运行一个子Shell，该子Shell对应于emacs中的一个名为"*Shell*"的缓冲区，此后，我们就可以交互式的运行Shell命令了。
 * `M-x term`：运行一个子Shell，该子Shell对应于emacs中的一个名为"*Terminal*"的缓冲区。使用该命令获得的子Shell是一个完整的Shell的模拟，与我们直接在Shell中操作没有什么差别。
 * `M-x eshell`：运行emacs shell。该Shell为emacs自己实现的一个shell，而前面运行的shell都为系统中的shell程序(例如：/bin/csh等）。我们可以通过设置变量shell-file-name来设置emacs所使用的默认shell
+
+<h2 id="9">9.常用M-x命令</h2>    
+
+| 操作 | 作用 |
+|-- |-- |
+| json-pretty-print-buffer | 格式化json文件 |
