@@ -20,7 +20,7 @@ setq用于给symbol的reference设置，而setf用于设置list或者array的ref
 # 2. 集成插件，与第三方软件结合
 #### 1. gnu global
 1. 安装：sudo apt-get install global
-2. `(setenv "PATH" (concat "/path/to/global/bin;" (getenv "PATH")))`  设置环境变量
+2. `(setenv "PATH" (concat "/path/to/global/bin;" (getenv "PATH")))`  设置环境变量，上一步安装完已经设置了PATH
 3. 安装 gtags.el
     * gtags安装时自带了gtags.el，找到它，把它复制到emacs的 load-path 中。
     * 也可以用 elpa 安装 gtags.el. 
