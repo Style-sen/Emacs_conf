@@ -22,14 +22,13 @@ setq用于给symbol的reference设置，而setf用于设置list或者array的ref
 1. 安装：sudo apt-get install global
 2. `(setenv "PATH" (concat "/path/to/global/bin;" (getenv "PATH")))`  设置环境变量，上一步安装完已经设置了PATH
 3. 安装 gtags.el
-    * gtags安装时自带了gtags.el，找到它，把它复制到emacs的 load-path 中。
-    * 也可以用 elpa 安装 gtags.el. 
+    * 也可以用 elpa 安装 gtags.el. `package-install RET ggtags`
     * 准备好 gtags.el 之后，在 .emacs 或是 .emacs.d/init.el 中加入 
     `(setq gtags-suggested-key-mapping t)` 以使用建议的键绑定。 
 4. 生成代码索引文件。 
     * 打开在代码目录下执行 gtags ，将生成索引，生成GPATH, GTAGS, GRTAGS。 
     * 如果想看详细输出，用 gtags -v ，能看到哪些文件被索引了。 
-5. 在Emacs中打开一个源文件，`M-x gtags-mode`，如果 gtags.el 正确安装了，就会启动 gtags minor-mode。 
+5. 在Emacs中打开一个源文件，`M-x ggtags-mode`，如果 gtags.el 正确安装了，就会启动 gtags minor-mode。 
 6. 然后就可以使用gtags的按键绑定了。我常用的按键如下： 
 
     操作 | 作用
