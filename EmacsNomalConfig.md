@@ -40,3 +40,6 @@ setq用于给symbol的reference设置，而setf用于设置list或者array的ref
     C-c s | 搜索某个符号。 
     C-c r | 看一个函数在哪些地方被引用。 
 
+#### 2. minimap 生成缩略图侧边栏
+1. 安装 `package-install RET minimap`
+2. 使用 `M-x minimap`
