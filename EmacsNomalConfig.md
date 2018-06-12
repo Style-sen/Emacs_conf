@@ -25,7 +25,7 @@ setq用于给symbol的reference设置，而setf用于设置list或者array的ref
     * gtags安装时自带了gtags.el，找到它，把它复制到emacs的 load-path 中。
     * 也可以用 elpa 安装 gtags.el. 
     * 准备好 gtags.el 之后，在 .emacs 或是 .emacs.d/init.el 中加入 
-    (setq gtags-suggested-key-mapping t) 以使用建议的键绑定。 
+    `(setq gtags-suggested-key-mapping t)` 以使用建议的键绑定。 
 4. 生成代码索引文件。 
     * 打开在代码目录下执行 gtags ，将生成索引，生成GPATH, GTAGS, GRTAGS。 
     * 如果想看详细输出，用 gtags -v ，能看到哪些文件被索引了。 
