@@ -1,4 +1,7 @@
 # 1. Eslip语法
+
+#### concat 连接字符串
+
 #### 1. t 表示true，即此选项选中的意思。
 (global-linum-mode t)  `全局行号设置打开`  
 (linum-relative-global-mode t)
@@ -11,6 +14,8 @@ setq用于给symbol的reference设置，而setf用于设置list或者array的ref
 
 #### 3. global-set-key 绑定M-x命令到按键
 (global-set-key [f1] 'whitespace-newline-mode)  显示行末的空格
+
+#### 4. setenv getenv 设置和获得环境变量的值
 
 # 2. 集成插件，与第三方软件结合
 #### 1. gnu global
