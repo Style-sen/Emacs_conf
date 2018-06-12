@@ -1,4 +1,4 @@
-## ELPY插件
+## [ELPY插件](https://github.com/jorgenschaefer/elpy)
 #### 1.安装
 1. 安装一些依赖包
 ```shell
