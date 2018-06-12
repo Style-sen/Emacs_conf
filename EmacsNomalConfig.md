@@ -26,6 +26,7 @@ setq用于给symbol的reference设置，而setf用于设置list或者array的ref
     * 如果想看详细输出，用 gtags -v ，能看到哪些文件被索引了。 
 5. 在Emacs中打开一个源文件，`M-x gtags-mode`，如果 gtags.el 正确安装了，就会启动 gtags minor-mode。 
 6. 然后就可以使用gtags的按键绑定了。我常用的按键如下： 
+
     操作 | 作用
     -- | --
     C-c v | 告诉Emacs项目的根目录，即到哪里去找GTAGS等文件。这一步不要跳过，否则你查找符号时Emacs会问你去哪里查找tags。 
