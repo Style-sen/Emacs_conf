@@ -167,7 +167,12 @@
 * `M-x eshell`：运行emacs shell。该Shell为emacs自己实现的一个shell，而前面运行的shell都为系统中的shell程序(例如：/bin/csh等）。我们可以通过设置变量shell-file-name来设置emacs所使用的默认shell
 
 <h2 id="9">9.常用M-x命令</h2>    
-
+    C-x Esc Esc返回上一条M-x命令
+    
 | 操作 | 作用 |
 |-- |-- |
+| delete-trailing-whitespace | 删除行末空格 |
+| delete-blank-lines | 删除空白行 |
 | json-pretty-print-buffer | 格式化json文件 |
+| whitespace-newline-mode | 显示行末空格 |
+| whitespace-cleanup | 自动清除行末空格 |
