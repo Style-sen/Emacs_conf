@@ -18,9 +18,11 @@ pip install yapf
 * 增加
 ```lisp
 (require 'package)
-(add-to-list 'package-archives '("elpy" . "https://jorgenschaefer.github.io/packages/"))
+(add-to-list 'package-archives
+             '("melpa-stable" . "https://stable.melpa.org/packages/"))
 ```
-* emacs中执行:M+x list-package\在列表中C+s搜索elpy\install
+* `M-x package-refresh-contents`
+* emacs中执行:`M+x list-package\在列表中C+s搜索elpy\install`
 * 增加
 ```lisp
 (package-initialize)
