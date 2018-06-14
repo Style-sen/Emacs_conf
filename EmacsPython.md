@@ -44,6 +44,13 @@ install
 ```shell
 "Step 1:"
 pip install importmagic epc
+"Step 2:"
+[Without MELPA]
+# Download both importmagic.el and importmagicserver.py. Place them on a load-path of your emacs directory. For instance: ~/.emacs.d/site-lisp
+# If you haven't already, tell emacs you want to load files from that directory:
+(add-to-list 'load-path (expand-file-name (concat user-emacs-directory "site-lisp/")))
+# Of course, you can choose to change the name of the site-lisp portion of the code. Don't forget to add the mode to Python buffers, put this line anywhere in your .emacs or init.el
+(add-hook 'python-mode-hook 'importmagic-mode)
 ```
 ## 更好的语法检查
 默认情况下，安装了Elpy插件的Emacs提供一个名叫Flymake的语法检查插件。但是，我们还可以选择另外一个名叫Flycheck的插件，后者支持 *实时语法* 检查。幸运地是，从Flymake切换至Flycheck非常简单：
