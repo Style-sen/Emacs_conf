@@ -1,4 +1,10 @@
-# 1. Eslip语法
+# 1. Add Package Archive
+```lisp
+(require 'package)
+(add-to-list 'package-archives
+             '("elpy" . "https://jorgenschaefer.github.io/packages/"))
+```
+# 2. Eslip语法
 
 #### concat 连接字符串
 
@@ -21,7 +27,7 @@ setq用于给symbol的reference设置，而setf用于设置list或者array的ref
 (global-linum-mode t)  `全局行号设置打开`  
 (linum-relative-global-mode t)
 
-# 2. 集成插件，与第三方软件结合
+# 1. 集成插件，与第三方软件结合
 #### 1. gnu global
 1. 安装：sudo apt-get install global
 2. `(setenv "PATH" (concat "/path/to/global/bin;" (getenv "PATH")))`  设置环境变量，上一步安装完已经设置了PATH
