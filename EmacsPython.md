@@ -22,7 +22,14 @@ pip install yapf
              '("melpa-stable" . "https://stable.melpa.org/packages/"))
 ```
 * `M-x package-refresh-contents`
-* emacs中执行:`M+x list-package\在列表中C+s搜索elpy\install`
+* emacs中执行:
+```
+M+x list-package
+"在列表中C+s搜索elpy"
+install
+"在列表中C+s搜索importmagic"
+install
+```
 * 增加
 ```lisp
 (package-initialize)
