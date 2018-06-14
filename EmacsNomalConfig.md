@@ -4,6 +4,9 @@
 (add-to-list 'package-archives
              '("elpy" . "https://jorgenschaefer.github.io/packages/"))
 ```
+```shell
+M-x package-refresh-contents
+```
 # 2. Eslip语法
 
 #### concat 连接字符串
