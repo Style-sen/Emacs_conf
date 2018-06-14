@@ -44,12 +44,14 @@ install
 ```shell
 "Step 1:"
 pip install importmagic epc
+```
+```lisp
 "Step 2:"
 [Without MELPA]
-# Download both importmagic.el and importmagicserver.py. Place them on a load-path of your emacs directory. For instance: ~/.emacs.d/site-lisp
-# If you haven't already, tell emacs you want to load files from that directory:
+;;Download both importmagic.el and importmagicserver.py. Place them on a load-path of your emacs directory. For instance: ~/.emacs.d/site-lisp
+;;If you haven't already, tell emacs you want to load files from that directory:
 (add-to-list 'load-path (expand-file-name (concat user-emacs-directory "site-lisp/")))
-# Of course, you can choose to change the name of the site-lisp portion of the code. Don't forget to add the mode to Python buffers, put this line anywhere in your .emacs or init.el
+;;"Don't forget to add the mode to Python buffers, put this line anywhere in your .emacs or init.el"
 (add-hook 'python-mode-hook 'importmagic-mode)
 ```
 ## 更好的语法检查
