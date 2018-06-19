@@ -18,6 +18,9 @@ M-x package-refresh-contents
 
 #### load 加载配置文件
 
+#### load-theme 加载[主题文件](https://emacsthemes.com/)
+(load-theme 'monokai t)
+
 #### require 加载配置模块（即配置文件中有provide xxx 来声明模块）
 
 #### setenv getenv 设置和获得环境变量的值
