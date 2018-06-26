@@ -165,6 +165,22 @@
 * `C-u M-! cmd RET`：执行一条Shell命令，并将其输出放到编辑区中光标所在的位置处，而不将其输出到"*Shell Command Output*"窗口。
 * `M-x shell`：运行一个子Shell，该子Shell对应于emacs中的一个名为"*Shell*"的缓冲区，此后，我们就可以交互式的运行Shell命令了。
 * `M-x term`：运行一个子Shell，该子Shell对应于emacs中的一个名为"*Terminal*"的缓冲区。使用该命令获得的子Shell是一个完整的Shell的模拟，与我们直接在Shell中操作没有什么差别。
+```shell
+The terminal emulator uses Term mode, which has two input modes. In line mode, Term basically acts like Shell mode (see Shell Mode). In char mode, each character is sent directly to the subshell, except for the Term escape character, normally C-c.
+To switch between line and char mode, use these commands:
+C-c C-j
+Switch to line mode (term-line-mode). Do nothing if already in line mode.
+C-c C-k
+Switch to char mode (term-char-mode). Do nothing if already in char mode.
+The following commands are only available in char mode:
+C-c C-c
+Send a literal C-c to the sub-shell. 
+C-c char
+This is equivalent to C-x char in normal Emacs. For example, C-c o invokes the global binding of C-x o, which is normally ‘other-window’.
+Term mode has a page-at-a-time feature. When enabled, it makes output pause at the end of each screenful:
+C-c C-q
+Toggle the page-at-a-time feature. This command works in both line and char modes. When the feature is enabled, the mode-line displays the word ‘page’, and each time Term receives more than a screenful of output, it pauses and displays ‘**MORE**’ in the mode-line. Type <SPC> to display the next screenful of output, or ? to see your other options. The interface is similar to the more program.
+```
 * `M-x eshell`：运行emacs shell。该Shell为emacs自己实现的一个shell，而前面运行的shell都为系统中的shell程序(例如：/bin/csh等）。我们可以通过设置变量shell-file-name来设置emacs所使用的默认shell
 
 <h2 id="9">9.常用M-x命令</h2>    
