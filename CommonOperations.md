@@ -5,9 +5,9 @@
 [5.“神器”宏操作](#5)    
 [6.排序](#6)    
 [7.大小写转换](#7)    
-[8.执行shell命令](#8)
-
-[9.常用M-x命令](#9)    
+[8.执行shell命令](#8)    
+[9.常用M-x命令](#9)      
+[10.常用列操作](#10)    
 
 <h2 id="1">1.光标移动</h2>    
 
@@ -193,3 +193,11 @@ Toggle the page-at-a-time feature. This command works in both line and char mode
 | json-pretty-print-buffer | 格式化json文件 |
 | whitespace-newline-mode | 显示行末空格 |
 | whitespace-cleanup | 自动清除行末空格 |
+
+<h2 id='10'>10.常用列操作</h2>
+
+    首先划定列区域：C-@ 标记起点，移动光标，标记终点，组成一个选择区域。
+| 操作 | 作用 |
+|-- |-- |
+| C-x r t [插入的字符] | 在每一行插入相同的字符串 |
+| 
