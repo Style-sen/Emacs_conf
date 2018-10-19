@@ -1,4 +1,9 @@
-# 1. Add Package Archive
+[1. 增加包资源](#1)    
+[2. Eslip语法](#2)   
+[3. 集成插件](#3)
+
+<h2 id='1'>1. Add Package Archive</h2>
+
 ```lisp
 (require 'package)
 (add-to-list 'package-archives
@@ -9,7 +14,7 @@
 ```shell
 M-x package-refresh-contents
 ```
-# 2. Eslip语法
+<h2 id='2'>2. Eslip语法</h2>
 
 #### concat 连接字符串
 
@@ -35,7 +40,8 @@ setq用于给symbol的reference设置，而setf用于设置list或者array的ref
 (global-linum-mode t)  `全局行号设置打开`  
 (linum-relative-global-mode t)
 
-# 1. 集成插件，与第三方软件结合
+<h2 id='3'>3. 集成插件，与第三方软件结合</h2>
+
 #### 1. gnu global
 1. 安装：sudo apt-get install global
 2. `(setenv "PATH" (concat "/path/to/global/bin;" (getenv "PATH")))`  设置环境变量，上一步安装完已经设置了PATH
