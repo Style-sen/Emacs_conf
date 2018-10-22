@@ -67,3 +67,14 @@ setq用于给symbol的reference设置，而setf用于设置list或者array的ref
 #### 2. minimap 生成缩略图侧边栏
 1. 安装 `package-install RET minimap`
 2. 使用 `M-x minimap`
+
+#### 3. [projectile](https://github.com/bbatsov/projectile)
+1. `sudo apt-get install elpa-projectile`
+2. 命令
+
+操作 | 作用
+-- | --
+C-c p f | 打开工程中的文件
+C-c p g | switch to file
+C-c p p | 切换项目
+C-c p s g | 搜索字符串使用
