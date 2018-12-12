@@ -198,6 +198,7 @@ Toggle the page-at-a-time feature. This command works in both line and char mode
 | json-pretty-print-buffer | 格式化json文件 |
 | whitespace-newline-mode | 显示行末空格 |
 | whitespace-cleanup | 自动清除行末空格 |
+| revert-buffer | 刷新缓冲区 |
 
 <h2 id='10'>10.常用列操作</h2>
 
