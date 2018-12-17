@@ -222,8 +222,9 @@ Toggle the page-at-a-time feature. This command works in both line and char mode
 
 <h2 id='10'>10.常用列操作</h2>
 
-    首先划定列区域：C-@ 标记起点，移动光标，标记终点，组成一个选择区域。
 | 操作 | 作用 |
 |-- |-- |
+| C-@ 标记起点，移动光标，标记终点，组成一个选择区域 | 划定列区域 |
+| S-方向键 | 划定列区域 |
 | C-x r t [插入的字符] | 在每一行插入相同的字符串 |
-| 
+| C-x r k | 删除选中的列内容 |
