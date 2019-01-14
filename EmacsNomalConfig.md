@@ -2,6 +2,13 @@
 [2. Eslip语法](#2)   
 [3. 集成插件](#3)
 
+```
+sudo add-apt-repository ppa:kelleyk/emacs
+sudo apt-get update
+sudo apt install emacs26 # GUI 版本
+或者 sudo apt install emacs26-nox ## 命令行版本
+```
+
 <h2 id='1'>1. Add Package Archive</h2>
 
 ```lisp
