@@ -52,7 +52,9 @@
 | C-S-Backspace |  删除当前行          |
 | C-y           |  恢复删除最近的一个  |
 | M-y           |  循环恢复删除上一个  |
-<h2 id="3">3.标记</h2> 
+<h2 id="3">3.标记和区域</h2> 
+
+[参考](https://www.gnu.org/software/emacs/manual/html_node/emacs/Mark.html)
 
 | 标记命令 | 作用 |
 | -- | -- |
