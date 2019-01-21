@@ -90,3 +90,13 @@ C-c p s g | 搜索字符串使用
 
 an Emacs "jump to definition" package.    
 [项目地址](https://github.com/jacktasia/dumb-jump)
+
+    第一步：M-x package-list 列出所有插件，选择dumb-jump安装；
+    第二步：apt-get install silversearcher-ag
+    第三步：下载[Wilfred/ag.el](https://github.com/Wilfred/ag.el)
+    第四步：在.emacs中添加
+    ```
+    (add-to-list 'load-path "~/.emacs.d/ag.el")
+    (require 'ag)
+    (dumb-jump-mode)
+    ```
