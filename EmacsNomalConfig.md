@@ -85,3 +85,8 @@ C-c p f | 打开工程中的文件
 C-c p g | switch to file
 C-c p p | 切换项目
 C-c p s g | 搜索字符串使用
+
+<h2 id='3-2'>dumb-jump</h2>
+
+an Emacs "jump to definition" package.    
+[项目地址](https://github.com/jacktasia/dumb-jump)
