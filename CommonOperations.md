@@ -54,12 +54,14 @@
 | M-y           |  循环恢复删除上一个  |
 <h2 id="3">3.标记和区域</h2> 
 
-[参考](https://www.gnu.org/software/emacs/manual/html_node/emacs/Mark.html)
+[参考 11](https://www.gnu.org/software/emacs/manual/html_node/emacs/Mark.html)
 
 | 标记命令 | 作用 |
 | -- | -- |
 | C-@     | 标记文本块的开始  |
 | C-space | 同上 |
+| M-@     | 标记单词，可以多次执行标记多个单词 |
+| C-M-@   | 标记表达式，可以多次执行标记多个表达式 |
 | C-x C-x | 互换插入点和文本标记的位置 | 
 | M-h     | 标记整个段落               | 
 | C-x C-p | 标记整个页面               | 
